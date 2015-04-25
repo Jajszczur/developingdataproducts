@@ -27,7 +27,7 @@ shinyUI(fluidPage(
                                 "Diabetes" = "Diabetes"))
                ),
                textOutput("scatterPlotDescription"),
-               plotOutput("scatterPlot")),
+               plotOutput("scatterPlot", height = '400px', width = '600px')),
       tabPanel("Prediction",
                wellPanel(
                 p("The following app predicts the average life expectancy 
