@@ -2,7 +2,7 @@ library(shiny)
 source('load_data.R')
 shinyUI(fluidPage(
   
-  titlePanel("Community Health Status Indicators"),
+  titlePanel("Average Life Expectancy Visualization and Prediction"),
   p("Community Health Status Indicators (CHSI) to combat obesity,
     heart disease, and cancer are major components of the Community
     Health Data Initiative. This dataset provides key health indicators
@@ -11,12 +11,12 @@ shinyUI(fluidPage(
     (e.g., obesity, heart disease, cancer)."),
   p(tags$a(href = "https://catalog.data.gov/dataset/community-health-status-indicators-chsi-to-combat-obesity-heart-disease-and-cancer",
            "The Community Health Status Indicators (CHSI) to Combat Obesity, Heart Disease and Cancer Dataset.")),
-  p("The 'Data' tab displays the relationship between health risk factors
+  p("The 'Visualization' tab displays the relationship between health risk factors
     and average life expectancy in 3,141 United States counties."),
   p("In the 'Prediction' tab you can predict average life expectancy of a community
     by providing values for risk factors."),
     tabsetPanel(
-      tabPanel("Data", 
+      tabPanel("Visualization", 
                inputPanel(
                  radioButtons("risk", "Select a Risk Factor:",
                               c("No Exercise" = "No_Exercise",
