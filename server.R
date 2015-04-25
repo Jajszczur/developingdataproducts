@@ -9,8 +9,6 @@ factors <- c("No_Exercise" = "% No Exercise in Community",
              "Smoker" = "% Smokers in Community",
              "Diabetes" = "% Diabetes in Community")
 
-
-# Define server logic required to generate and plot a random distribution
 shinyServer(function(input, output) {
   output$scatterPlot <- renderPlot({
     risk <- input$risk
